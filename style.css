@@ -1,0 +1,136 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    line-height: 1.6;
+    font-size: 62.5%;
+}
+
+:root{
+    --named-stat-type: 1.123rem;
+    --dark-cyan: hsl(185, 75%, 39%);
+}
+body{
+    background: url(./images/bg-pattern-top.svg) no-repeat top -150px left -370px, url(./images/bg-pattern-bottom.svg) no-repeat bottom -280px right -400px;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color:var(--dark-cyan);
+    font-size: var(--named-stat-type);
+    
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background: url(./images/bg-pattern-card.svg) no-repeat;
+    background: #eee;
+    border-radius: 2rem;
+    display: flex;
+    padding: 2rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    max-width: 30rem;
+    overflow: hidden;
+    
+}
+
+.container::before{
+    content: '';
+    background: url(./images/bg-pattern-card.svg) no-repeat;
+    height: 100%;
+    width:100%;
+    position: absolute;
+    border-radius: 2rem;
+    top: 0%;
+    /* flex: 9; */
+}
+
+.card-content{
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4rem;
+    padding: 2rem 1.9rem;
+    font-size: var(--named-stat-type);
+    text-align: center;
+    font-weight: 700;
+    color:hsl(229, 23%, 23%) ;
+}
+
+.card-content p{
+    font-size:1.1rem;
+    padding-top: 1rem;
+}
+
+.card-content img{
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.line{
+    width: .1rem;
+    height:.1rem;
+    padding: 0rem 16.5rem;
+    background: hsl(0, 0%, 59%);
+    opacity: 0.3;
+}
+.stats{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    padding-top: 3rem;
+    font-size: var(--named-stat-type);
+    color:hsl(229, 23%, 23%) ;
+    text-align: center;
+    flex: 0.8;
+
+   
+}
+
+.stats_item{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    /* justify-content: space-around; */
+    padding:0 2rem;
+    font-size: var(--named-stat-type);
+    text-transform: uppercase;
+
+
+   
+}
+
+.light-grey{
+    color:hsl(0, 0%, 59%);
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 0.8px;
+   
+    text-align: center;
+}
+
+
+
+
+/* footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+
